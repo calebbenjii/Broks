@@ -10,6 +10,11 @@ import SingleProduct from './pages/SingleProductPage'
 import Contact from './pages/ContactPage'
 import Default from './pages/DefaultPage'
 
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Sidebar from './components/Sidebar'
+import SideCart from './components/SideCart'
+
 
 
 
@@ -17,6 +22,9 @@ import Default from './pages/DefaultPage'
   return (
     <>
       {/* Navbar, Sidebar, Cart, footer */}
+      <Navbar />
+      <Sidebar />
+      <SideCart />
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
@@ -26,6 +34,7 @@ import Default from './pages/DefaultPage'
         <Route path="/cart" component={Cart}/>
         <Route component={Default}/>
       </Switch>
+      <Footer />
     </>
   );
 }
