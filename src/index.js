@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Route} from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Route>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Route>,
   document.getElementById('root')
 );
 
