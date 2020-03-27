@@ -5,7 +5,12 @@ export default function HomePage() {
   return (
     <>
       <ProductConsumer>
-        {value => <h4>{value}</h4>}
+        {value => {
+          console.log(value)
+          return (
+            <h1>Hello from home page</h1>
+          )
+        }}
       </ProductConsumer>
     </>
   )
