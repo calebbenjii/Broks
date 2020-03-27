@@ -1,9 +1,12 @@
 import React from 'react'
+import { ProductConsumer } from '../context'
 
 export default function HomePage() {
   return (
     <>
-      <h1>Hello from Home Page</h1>
+      <ProductConsumer>
+        {value => <h4>{value}</h4>}
+      </ProductConsumer>
     </>
   )
 }
