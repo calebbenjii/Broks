@@ -1,16 +1,16 @@
 import React from 'react'
-import { ProductConsumer } from '../context'
+import Hero from '../components/Hero';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   return (
     <>
-      <ProductConsumer>
-        {value => {
-          return (
-            <h1>Hello from home page</h1>
-          )
-        }}
-      </ProductConsumer>
+      <Hero 
+        title="awesome gadgets" 
+        description="get cool products from us" max="true">
+        <Link to="/styleguide">Our Products</Link>
+       
+      </Hero>
     </>
   )
 }

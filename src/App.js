@@ -21,7 +21,6 @@ import SideCart from './components/SideCart'
  function App() {
   return (
     <>
-      {/* Navbar, Sidebar, Cart, footer */}
       <Navbar />
       <Sidebar />
       <SideCart />

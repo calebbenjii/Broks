@@ -5,7 +5,7 @@
   --primaryColor: #5fb7ea;
   --primaryRGBA: rgba(0,0,0,0.3);
   --mainWhite: #fafafa;
-  --darkGery: #5f5e5e;
+  --darkGrey: #5f5e5e;
   --mainBlack: #222;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
@@ -26,3 +26,5 @@ body {
   background: var(--mainGrey) !important;
   color: var(--mainBlack);
 }
+
+
