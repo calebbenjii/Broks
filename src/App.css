@@ -27,4 +27,23 @@ body {
   color: var(--mainBlack);
 }
 
+.main-link {
+  background: var(--primaryColor);
+  display: inline;
+  padding: 0.5rem 1rem;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 3px;
+  border: none;
+  transition: var(--mainTransition);
+}
+.main-link:hover {
+  text-decoration: none;
+  background: var(--darkGrey);
+  color: var(--primaryColor);
+  outline-color: var(--darkGrey);
+}
+
 
